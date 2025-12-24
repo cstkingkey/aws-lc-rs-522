@@ -43,4 +43,4 @@ jobs:
         env:
           AWS_LC_SYS_NO_PREFIX: "1"
         run: |
-          cross +nightly build --bin aws-lc-rs-522 --profile ${{ matrix.profile }} --target ${{ matrix.target[0] }} --verbose
+          cross build --bin aws-lc-rs-522 --profile ${{ matrix.profile }} --target ${{ matrix.target[0] }} --verbose

@@ -1,2 +1,2 @@
 build-mips:
-	cross +nightly build --target mipsel-unknown-linux-musl --verbose
+	cross build --target mipsel-unknown-linux-musl --verbose
