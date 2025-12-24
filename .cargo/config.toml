@@ -1,0 +1,13 @@
+[env]
+AWS_LC_SYS_NO_JITTER_ENTROPY = "1"
+
+[target.mips-unknown-linux-musl]
+linker = ".cargo/mips-linker.sh"
+rustflags = [
+  "-C",
+  "panic=abort",
+  "-C",
+  "link-arg=-static",
+  "-C",
+  "target-feature=+crt-static",
+]
