@@ -16,6 +16,7 @@ jobs:
           - ["mipsel-unknown-linux-musl", true, false]
           - ["mips64-unknown-linux-muslabi64", true, false]
           - ["mips64el-unknown-linux-muslabi64", true, false]
+          - ["mips64el-unknown-linux-gnuabi64", true, false]
     name: Build ${{ matrix.profile }} ${{ matrix.target[0] }}
     runs-on: ubuntu-latest
     env:
