@@ -35,10 +35,8 @@ jobs:
         uses: dtolnay/rust-toolchain@nightly
 
       - name: Install cross
-        run: |
-           cargo install cross --git https://github.com/cross-rs/cross
-           rustup target add ${{ matrix.target[0] }}
-
+        run: cargo install cross --git https://github.com/cross-rs/cross
+           
       - name: Set bindgen feature for aws-lc-rs
         run: cargo add aws-lc-rs -F bindgen -p aws-lc-rs-522
 
